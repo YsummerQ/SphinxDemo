@@ -15,7 +15,8 @@ release = 'release'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 # extensions = []
-extensions = ['recommonmark','sphinx_markdown_tables']
+# extensions = ['recommonmark','sphinx_markdown_tables']
+extensions = ['recommonmark']
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -28,3 +29,4 @@ exclude_patterns = []
 # html_theme = 'alabaster'
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+
