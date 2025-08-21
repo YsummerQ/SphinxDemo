@@ -1,9 +1,0 @@
-/* 顶部导航栏 & 移动端标题栏（橙色） */
-.wy-side-nav-search, .wy-nav-top {
-  background: #FF8C00 !important;  /* 深橙色 */
-}
-
-/* 左侧导航栏背景（深橙色） */
-.wy-nav-side {
-  background: #E67400 !important;   /* 比顶部稍深的橙色 */
-}
