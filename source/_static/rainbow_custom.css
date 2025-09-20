@@ -1,0 +1,149 @@
+/* 🌈 彩虹调试版CSS - 每个区域用不同颜色标识 */
+
+/* 🔵 蓝色 - 侧边栏主背景 */
+.wy-nav-side {
+    background: white !important;
+}
+
+/* 🟢 绿色 - 侧边栏顶部搜索区域 */
+.wy-side-nav-search {
+    background-color: #00cc00 !important;
+}
+
+/* 🟡 黄色背景 + 黑字 - 搜索输入框 */
+.wy-side-nav-search input[type=text] {
+    border-color: #ffcc00 !important;
+    background-color: #ffcc00 !important;
+    color: #000000 !important;
+}
+
+/* 🟣 紫色文字 - 侧边栏菜单链接 */
+.wy-menu-vertical a {
+    color: #cc00ff !important;
+    font-weight: bold !important;
+}
+
+/* 🟠 橙色背景 - 菜单链接悬停效果 */
+.wy-menu-vertical a:hover {
+    background-color: #ff6600 !important;
+    color: #ffffff !important;
+}
+
+/* 🔴 红色背景 - 当前选中的菜单项 */
+.wy-menu-vertical .current a {
+    background-color: #ff0000 !important;
+    color: #ffffff !important;
+}
+
+/* ⚫ 黑色 - 顶部导航栏 */
+.wy-nav-top {
+    display: block !important;
+    background: #000000 !important;
+    background-color: #000000 !important;
+    height: 50px !important;
+    width: 100% !important;
+    position: relative !important;
+    z-index: 1000 !important;
+    visibility: visible !important;
+}
+
+/* ⚫ 黑色背景 + 白字 - 顶部导航栏链接 */
+.wy-nav-top a {
+    display: block !important;
+    background: #000000 !important;
+    color: #ffffff !important;
+    padding: 15px 20px !important;
+    text-decoration: none !important;
+    line-height: 20px !important;
+}
+
+/* 🔘 灰色 - 顶部导航栏悬停 */
+.wy-nav-top a:hover {
+    background: #666666 !important;
+}
+
+/* 🩷 粉色 - 所有内容标题 */
+.rst-content h1, .rst-content h2, .rst-content h3, 
+.rst-content h4, .rst-content h5, .rst-content h6 {
+    color: #ff69b4 !important;
+    font-weight: bold !important;
+}
+
+/* 🔷 青色 - 内容区域的链接 */
+.rst-content a {
+    color: #00cccc !important;
+    font-weight: bold !important;
+}
+
+/* 🔶 深青色 - 链接悬停效果 */
+.rst-content a:hover {
+    color: #008888 !important;
+    text-decoration: underline !important;
+}
+
+/* 🟤 棕色背景 - 代码块 */
+.rst-content pre.literal-block, 
+.rst-content div[class^="highlight"] pre,
+.rst-content .linenodiv pre {
+    background-color: #8b4513 !important;
+    color: #ffffff !important;
+    border: 2px solid #654321 !important;
+}
+
+/* 🟨 浅黄色 - 行内代码 */
+.rst-content code.literal {
+    background-color: #ffff99 !important;
+    color: #000000 !important;
+    border: 1px solid #cccc00 !important;
+    padding: 2px 4px !important;
+}
+
+/* 🟦 深蓝色 - 表格头部 */
+.rst-content table.docutils thead {
+    background-color: #003366 !important;
+    color: #ffffff !important;
+}
+
+/* 🟩 浅绿色 - 注释框 */
+.rst-content .note {
+    background-color: #ccffcc !important;
+    border-color: #00aa00 !important;
+    border-width: 3px !important;
+}
+
+/* 🟧 橙色 - 警告框 */
+.rst-content .warning {
+    background-color: #ffcc99 !important;
+    border-color: #ff6600 !important;
+    border-width: 3px !important;
+}
+
+/* 🌈 彩虹边框 - 页面主体 */
+body {
+    border: 5px solid;
+    border-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet) 1 !important;
+}
+
+/* 🟪 紫色背景 - 面包屑导航 */
+.wy-breadcrumbs {
+    background-color: #8a2be2 !important;
+    color: #ffffff !important;
+    padding: 10px !important;
+}
+
+.wy-breadcrumbs a {
+    color: #ffff00 !important;
+    font-weight: bold !important;
+}
+
+/* 📱 特殊：移动端菜单按钮（如果存在）*/
+.wy-nav-top i {
+    color: #ffffff !important;
+}
+
+/* 🔍 搜索结果高亮 */
+.highlighted {
+    background-color: #ff00ff !important;
+    color: #ffffff !important;
+    padding: 2px !important;
+}
