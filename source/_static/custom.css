@@ -184,9 +184,9 @@
     transition: background 0.2s ease !important;
 }
 
-.wy-nav-top a:hover {
+/* .wy-nav-top a:hover {
     background: rgba(255,255,255,0.15) !important;
-}
+} */
 
 /* 主内容区域 */
 .wy-nav-content {
@@ -410,4 +410,20 @@ body {
 /* 确保整体协调性 */
 .wy-nav-content-wrap {
     background: #ffffff !important;
+}
+
+/* 防止顶部导航栏文本选择 */
+.wy-nav-top {
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    cursor: pointer !important;
+}
+
+.wy-nav-top * {
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
 }
