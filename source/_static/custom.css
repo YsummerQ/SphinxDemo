@@ -1,0 +1,413 @@
+/* 🔵 以 #003399 为主题的清爽浅色设计 */
+
+/* 侧边栏 - 非常浅的蓝色调背景 */
+.wy-nav-side {
+    background: linear-gradient(180deg, #f8faff, #f0f4ff) !important;
+    border-right: 1px solid #d6e3ff !important;
+}
+
+/* 侧边栏顶部搜索区域 - 你可以选择以下颜色之一 */
+.wy-side-nav-search {
+    /* background: #4d79a6 !important; */     /* 👈 你当前用的颜色 */
+    /* background: #5b8bb5 !important;     👈 推荐1：稍浅一点的蓝 */
+    background: #6699cc !important;     /* 👈 推荐2：柔和的蓝色 */
+    /* background: #7aa3d1 !important;          👈 推荐3：温和的浅蓝（推荐） */
+    /* background: #8bb4e6 !important; */     /* 👈 推荐4：很浅的蓝色 */
+    
+    border-bottom: 1px solid #d6e3ff !important;
+    box-shadow: 0 1px 3px rgba(0, 51, 153, 0.05) !important;
+}
+
+/* 搜索输入框 - 柔和的蓝色边框 */
+.wy-side-nav-search input[type=text] {
+    border: 1px solid #b3d1ff !important;
+    background-color: #ffffff !important;
+    color: #003399 !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    padding: 8px 12px !important;
+}
+
+.wy-side-nav-search input[type=text]:focus {
+    border-color: #003399 !important;
+    box-shadow: 0 0 0 3px rgba(0, 51, 153, 0.1) !important;
+    outline: none !important;
+}
+
+/* === 修复+/-号显示问题 === */
+/* 给整个菜单容器增加左边距 */
+.wy-menu-vertical {
+    padding-left: 5px !important;  /* 👈 为+/-号留出空间 */
+}
+
+/* 侧边栏菜单链接 - 深蓝色文字 */
+.wy-menu-vertical a {
+    color: #003399 !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+    padding: 10px 16px 10px 25px !important; /* 👈 增加左padding */
+    margin: 1px 0 !important;
+    border-radius: 0 !important;
+}
+
+/* 菜单链接悬停 - 浅蓝色高亮 */
+.wy-menu-vertical a:hover {
+    background-color: #e6f0ff !important;
+    color: #002266 !important;
+}
+
+/* === 4层菜单层次设计 === */
+
+/* 第1层：大标题（第一章）- 蓝色背景，最粗字体 */
+.wy-menu-vertical .current > a {
+    background: linear-gradient(135deg, #cce0ff, #b3d1ff) !important;
+    color: #003399 !important;
+    font-weight: 800 !important;        /* 👈 最粗字体 */
+    font-size: 16px !important;         /* 👈 最大字体 */
+    border-left: none !important;       /* 👈 去掉遮挡边框 */
+    padding-left: 25px !important;      /* 👈 适当左边距 */
+    margin: 0 !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+/* 移除重复的 .current a 规则，避免冲突 */
+
+/* 第2层：小标题（第一节）- 浅灰背景，粗体 */
+.wy-menu-vertical .current ul li a {
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0) !important;
+    color: #555555 !important;
+    font-weight: 700 !important;        /* 👈 粗体，比大标题细一点 */
+    font-size: 15px !important;         /* 👈 中等字体 */
+    border-left: 3px solid #888888 !important;
+    padding-left: 35px !important;      /* 👈 更多缩进 */
+    margin: 0 !important;
+}
+
+.wy-menu-vertical .current ul li a:hover {
+    background: linear-gradient(135deg, #e0e0e0, #d0d0d0) !important;
+    color: #333333 !important;
+    border-left: 3px solid #666666 !important;
+}
+
+/* 第3层：小小标题（1.1, 1.2）- 更浅背景，中等字重 */
+.wy-menu-vertical .current ul li ul li a {
+    background: linear-gradient(135deg, #f8f8f8, #eeeeee) !important;
+    color: #666666 !important;
+    font-weight: 600 !important;        /* 中等字重 */
+    font-size: 14px !important;         /* 较小字体 */
+    border-left: 2px solid #aaaaaa !important;
+    padding-left: 45px !important;      /* 更多缩进 */
+    margin: 0 !important;
+    font-style: normal !important;      /* 👈 改为正常字体，去掉斜体 */
+}
+
+.wy-menu-vertical .current ul li ul li a:hover {
+    background: linear-gradient(135deg, #eeeeee, #e0e0e0) !important;
+    color: #444444 !important;
+}
+
+/* 第4层：最小标题（1.1.1, 1.1.2）- 最浅背景，正常字重 */
+.wy-menu-vertical .current ul li ul li ul li a {
+    background: linear-gradient(135deg, #fafafa, #f5f5f5) !important;
+    color: #777777 !important;
+    font-weight: 400 !important;        /* 👈 正常字重 */
+    font-size: 13px !important;         /* 👈 最小字体 */
+    border-left: 1px solid #cccccc !important;
+    padding-left: 55px !important;      /* 👈 最多缩进 */
+    margin: 0 !important;
+    font-style: normal !important;
+}
+
+.wy-menu-vertical .current ul li ul li ul li a:hover {
+    background: linear-gradient(135deg, #f0f0f0, #e8e8e8) !important;
+    color: #555555 !important;
+}
+
+/* === 当前激活项的特殊标识 === */
+
+/* 当前激活的第2层 */
+.wy-menu-vertical .current ul li.current a {
+    background: linear-gradient(135deg, #d0d0d0, #c0c0c0) !important;
+    color: #333333 !important;
+    font-weight: 700 !important;
+    border-left: 4px solid #003399 !important;  /* 👈 蓝色标识当前项 */
+}
+
+/* 当前激活的第3层 */
+.wy-menu-vertical .current ul li ul li.current a {
+    background: linear-gradient(135deg, #e8e8e8, #d8d8d8) !important;
+    color: #444444 !important;
+    font-weight: 600 !important;
+    border-left: 3px solid #003399 !important;  /* 蓝色标识当前项 */
+    font-style: normal !important;      /* 👈 改为正常字体，去掉斜体 */
+}
+
+/* 当前激活的第4层 */
+.wy-menu-vertical .current ul li ul li ul li.current a {
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0) !important;
+    color: #555555 !important;
+    font-weight: 500 !important;
+    border-left: 2px solid #003399 !important;  /* 👈 蓝色标识当前项 */
+}
+
+/* === 确保+/-折叠按钮可见 === */
+.wy-menu-vertical .toctree-expand {
+    color: #003399 !important;
+    font-weight: bold !important;
+    margin-right: 8px !important;       /* 👈 确保按钮有足够空间 */
+}
+
+/* === 保持原有的其他样式 === */
+
+/* 顶部导航栏 - 增加高度适应DeepRAN */
+.wy-nav-top {
+    display: block !important;
+    background: linear-gradient(135deg, #003399, #0044bb) !important;
+    height: 65px !important;
+    width: 100% !important;
+    position: relative !important;
+    z-index: 1000 !important;
+    box-shadow: 0 2px 8px rgba(0, 51, 153, 0.15) !important;
+}
+
+/* 顶部导航栏链接 - 调整padding适应新高度 */
+.wy-nav-top a {
+    display: block !important;
+    background: transparent !important;
+    color: #ffffff !important;
+    padding: 20px 20px !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    line-height: 25px !important;
+    transition: background 0.2s ease !important;
+}
+
+.wy-nav-top a:hover {
+    background: rgba(255,255,255,0.15) !important;
+}
+
+/* 主内容区域 */
+.wy-nav-content {
+    background: #ffffff !important;
+}
+
+/* 内容标题 - 基于主题蓝色的层次 */
+.rst-content h1 {
+    color: #003399 !important;
+    border-bottom: 3px solid #e6f0ff !important;
+    padding-bottom: 12px !important;
+    font-weight: 700 !important;
+}
+
+.rst-content h2 {
+    color: #0044bb !important;
+    border-bottom: 2px solid #f0f4ff !important;
+    padding-bottom: 8px !important;
+    font-weight: 600 !important;
+    margin-top: 2rem !important;
+}
+
+.rst-content h3 {
+    color: #0055cc !important;
+    font-weight: 600 !important;
+    margin-top: 1.5rem !important;
+}
+
+.rst-content h4, .rst-content h5, .rst-content h6 {
+    color: #4d79a6 !important;
+    font-weight: 500 !important;
+}
+
+/* 内容区域链接 - 主题蓝色 */
+.rst-content a {
+    color: #003399 !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    transition: color 0.2s ease !important;
+}
+
+.rst-content a:hover {
+    color: #002266 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 2px !important;
+}
+
+/* 代码块 - 浅蓝色背景 */
+.rst-content pre.literal-block, 
+.rst-content div[class^="highlight"] pre,
+.rst-content .linenodiv pre {
+    background: linear-gradient(135deg, #f8faff, #f0f4ff) !important;
+    border: 1px solid #d6e3ff !important;
+    border-radius: 8px !important;
+    color: #003399 !important;
+    padding: 16px 20px !important;
+    font-family: 'Monaco', 'Menlo', 'Consolas', monospace !important;
+    box-shadow: 0 2px 4px rgba(0, 51, 153, 0.05) !important;
+}
+
+/* 行内代码 - 柔和的蓝色调 */
+.rst-content code.literal {
+    background-color: #f0f4ff !important;
+    color: #003399 !important;
+    border: 1px solid #cce0ff !important;
+    border-radius: 4px !important;
+    padding: 2px 6px !important;
+    font-family: 'Monaco', 'Menlo', 'Consolas', monospace !important;
+    font-weight: 500 !important;
+}
+
+/* 表格 - 简洁蓝色主题 */
+.rst-content table.docutils {
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    border: 1px solid #d6e3ff !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    box-shadow: 0 2px 4px rgba(0, 51, 153, 0.05) !important;
+}
+
+.rst-content table.docutils thead {
+    background: linear-gradient(135deg, #e6f0ff, #cce0ff) !important;
+    color: #003399 !important;
+}
+
+.rst-content table.docutils thead th {
+    border-bottom: 2px solid #b3d1ff !important;
+    font-weight: 600 !important;
+    padding: 14px 16px !important;
+    text-align: left !important;
+}
+
+.rst-content table.docutils td {
+    border-bottom: 1px solid #f0f4ff !important;
+    padding: 12px 16px !important;
+    color: #003399 !important;
+}
+
+.rst-content table.docutils tbody tr:hover {
+    background-color: #f8faff !important;
+}
+
+/* 注释框 - 主题蓝色 */
+.rst-content .note {
+    background: linear-gradient(135deg, #f0f4ff, #e6f0ff) !important;
+    border-left: 4px solid #003399 !important;
+    border-radius: 0 8px 8px 0 !important;
+    color: #003399 !important;
+    padding: 16px 20px !important;
+    margin: 16px 0 !important;
+}
+
+/* 警告框 - 与主题协调的暖色 */
+.rst-content .warning {
+    background: linear-gradient(135deg, #fff8f0, #ffeee6) !important;
+    border-left: 4px solid #cc6600 !important;
+    border-radius: 0 8px 8px 0 !important;
+    color: #cc6600 !important;
+    padding: 16px 20px !important;
+    margin: 16px 0 !important;
+}
+
+/* 面包屑导航 */
+.wy-breadcrumbs {
+    background: transparent !important;
+    border-bottom: 1px solid #f0f4ff !important;
+    padding: 12px 0 !important;
+}
+
+.wy-breadcrumbs a {
+    color: #003399 !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    transition: color 0.2s ease !important;
+}
+
+.wy-breadcrumbs a:hover {
+    color: #002266 !important;
+}
+
+/* 搜索结果高亮 */
+.highlighted {
+    background-color: #fff5cc !important;
+    color: #003399 !important;
+    padding: 1px 3px !important;
+    border-radius: 3px !important;
+}
+
+/* 普通按钮样式 */
+.btn-neutral {
+    background: linear-gradient(135deg, #f0f4ff, #e6f0ff) !important;  /* 浅蓝色渐变背景 */
+    border: 1px solid #cce0ff !important;      /* 添加边框增加层次感 */
+    color: #003399 !important;                 /* 深蓝色文字，确保可读性 */
+    border-radius: 6px !important;
+    padding: 10px 18px !important;
+    font-weight: 600 !important;               /* 稍微加粗文字 */
+    font-size: 14px !important;                /* 设置合适的字体大小 */
+    transition: all 0.3s ease !important;      /* 稍微延长过渡时间 */
+    box-shadow: 0 2px 4px rgba(0, 51, 153, 0.1) !important;  /* 减轻阴影 */
+    cursor: pointer !important;                /* 确保显示手指光标 */
+}
+
+/* 按钮悬停效果 */
+.btn-neutral:hover {
+    background: linear-gradient(135deg, #e6f0ff, #cce0ff) !important;  /* 稍深的蓝色背景 */
+    border-color: #b3d1ff !important;          /* 稍深的边框 */
+    color: #002266 !important;                 /* 稍深的文字颜色 */
+    transform: translateY(-1px) !important;    /* 轻微上移效果 */
+    box-shadow: 0 4px 8px rgba(0, 51, 153, 0.15) !important;  /* 增强阴影 */
+}
+
+/* 按钮按下效果 */
+.btn-neutral:active {
+    background: linear-gradient(135deg, #cce0ff, #b3d1ff) !important;  /* 更深的背景 */
+    transform: translateY(0) !important;       /* 恢复位置 */
+    box-shadow: 0 1px 2px rgba(0, 51, 153, 0.2) !important;   /* 减少阴影 */
+}
+
+/* 如果有其他类型的按钮，也统一样式 */
+.btn, .btn-primary, .btn-secondary {
+    background: linear-gradient(135deg, #f0f4ff, #e6f0ff) !important;
+    border: 1px solid #cce0ff !important;
+    color: #003399 !important;
+    border-radius: 6px !important;
+    padding: 10px 18px !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 4px rgba(0, 51, 153, 0.1) !important;
+    cursor: pointer !important;
+}
+
+.btn:hover, .btn-primary:hover, .btn-secondary:hover {
+    background: linear-gradient(135deg, #e6f0ff, #cce0ff) !important;
+    border-color: #b3d1ff !important;
+    color: #002266 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 8px rgba(0, 51, 153, 0.15) !important;
+}
+
+/* 整体页面设置 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif !important;
+    line-height: 1.6 !important;
+    color: #333333 !important;
+    background: #fafbff !important;
+}
+
+/* 内容文本优化 */
+.rst-content {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+}
+
+.rst-content p {
+    margin-bottom: 1.2rem !important;
+    color: #333333 !important;
+}
+
+/* 确保整体协调性 */
+.wy-nav-content-wrap {
+    background: #ffffff !important;
+}
