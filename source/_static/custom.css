@@ -10,9 +10,10 @@
 .wy-side-nav-search {
     /* background: #4d79a6 !important; */     /* 👈 你当前用的颜色 */
     /* background: #5b8bb5 !important;     👈 推荐1：稍浅一点的蓝 */
-    background: #6699cc !important;     /* 👈 推荐2：柔和的蓝色 */
+    /* background: #6699cc !important;     👈 推荐2：柔和的蓝色 */
     /* background: #7aa3d1 !important;          👈 推荐3：温和的浅蓝（推荐） */
     /* background: #8bb4e6 !important; */     /* 👈 推荐4：很浅的蓝色 */
+    background: #003399 !important; 
     
     border-bottom: 1px solid #d6e3ff !important;
     box-shadow: 0 1px 3px rgba(0, 51, 153, 0.05) !important;
